@@ -1,6 +1,11 @@
-%h1 Blood Boast
-- if user_signed_in?
-  = link_to "Log out", destroy_user_session_path, :method => 'delete'
-- else
-  = link_to "Log in", new_user_session_path
+#banner.page-header
+  .logo
+    %i.icon-happy-heart
+  %h1
+    BloodBagdge
+  %p.lead Show off your awesome blood donations!
+
+%div
+  - if user_signed_in?
+    = link_to "My profile", profile_path(current_user)
 

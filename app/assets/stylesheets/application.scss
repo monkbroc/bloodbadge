@@ -8,10 +8,9 @@
  *
  * Specify imports using SASS @import directives. Otherwise, it is not
  * possible to reuse mixins and variables defined in earlier files
+ *
+ *= require bootstrap
+ *= require bootswatch
+ *= require font
+ *= require styles
  */
-// CSS Foundation
-@import "bootstrap-sprockets";
-@import "bootstrap";
-
-// Application styles
-@import "styles";

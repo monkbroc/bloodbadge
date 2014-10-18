@@ -22,9 +22,6 @@ gem 'jquery-rails'
 # Use debugger
 gem 'byebug', group: [:development, :test]
 
-# CSS Framework
-gem 'bootstrap-sass', '~> 3.0'
-
 # ERB Alternative
 gem 'haml-rails'
 

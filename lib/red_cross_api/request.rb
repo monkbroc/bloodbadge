@@ -5,6 +5,7 @@ module RedCrossAPI
 
     URL = {
       :authentication => '/v1.0/authentication',
+      :profile => '/v1.0/users/me?inflate=history'
     }
 
     JSON_HEADERS = { 'Content-Type' => 'application/json' }
@@ -21,10 +22,27 @@ module RedCrossAPI
           :token => response["token"]
         }
       else
-        raise response.parsed_response
+        raise AuthenticationError, response.parsed_response
       end
     end
 
+    def profile(token)
+      response = self.class.get(URL[:profile],
+                                :headers => authorization_header(token))
+      if response.success?
+        response.parsed_response
+      else
+        raise AuthorizationError, response.parsed_response
+      end
+    end
+
+    private
+
+    def authorization_header(token)
+      {
+        'Authorization' => token
+      }
+    end
   end
 end
 
