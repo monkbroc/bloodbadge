@@ -11,6 +11,7 @@ class BadgesController < ApplicationController
 
     # This is meant to be displayed through an iframe
     render :layout => false
+    allow_iframe
   end
 
   def blood_profile

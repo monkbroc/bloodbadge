@@ -12,4 +12,8 @@ class ApplicationController < ActionController::Base
     redirect_to root_url, :alert => "We couldn't find what you were looking for."
   end
 
+
+  def allow_iframe
+    response.headers.except! 'X-Frame-Options'
+  end
 end
