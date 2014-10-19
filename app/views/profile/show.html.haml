@@ -2,6 +2,9 @@
 
 %h2 Your Badge
 %p
-  = badge_url(current_user)
+  Paste this into another web page to include your blood donor badge.
+  %pre
+    :escaped
+      <iframe frameborder='0' height='140' src='#{badge_url(current_user)}' width='550'></iframe>
 
-%iframe{ :src => badge_url(current_user) + '?refresh=1', :width => 600, :height => 120, :frameborder => 0 }
+%iframe{ :src => badge_url(current_user), :width => 550, :height => 140, :frameborder => 0 }

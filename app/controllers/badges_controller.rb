@@ -14,7 +14,7 @@ class BadgesController < ApplicationController
   end
 
   def blood_profile
-    @blood_profile ||= RedCrossAPI.profile(user.token)
+    @blood_profile ||= BloodProfile.new RedCrossAPI.profile(user.token)
   end
   helper_method :blood_profile
 end

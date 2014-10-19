@@ -4,21 +4,22 @@
     = stylesheet_link_tag 'widget'
   %body
     - cache(user.badge_cache_key, :expires_in => 1.day, :skip_digest => true) do
-      %i.bb-happy-heart.widget-icon
-      %h1
-        I saved #{pluralize(blood_profile.lives_saved, 'life')}
-        %small
-          with my #{pluralize(blood_profile.donations, 'blood donation')}
-      %h2
-        I donated
-        = blood_profile.last_donation.nil? ? 'a long time' : time_ago_in_words(blood_profile.last_donation)
-        ago
-        - unless blood_profile.eligibility.nil?
-          and
-          - if blood_profile.eligibility <= Date.today
-            I can donate again now!
-          - else
-            I will be able to donate in #{time_ago_in_words(blood_profile.eligibility)}
-      %a.donate-button{:href => 'http://www.redcrossblood.org/make-donation'}
-        %i.bb-drop
-        What about you? Schedule a donation
+      .widget-frame
+        %i.bb-happy-heart.widget-icon
+        %h1
+          I saved #{pluralize(blood_profile.lives_saved, 'life')}
+          %small
+            with my #{pluralize(blood_profile.donations, 'blood donation')} to the Red Cross.
+        %h2
+          I donated
+          = blood_profile.last_donation.nil? ? 'a long time' : time_ago_in_words(blood_profile.last_donation)
+          ago
+          - unless blood_profile.eligibility.nil?
+            and
+            - if blood_profile.eligibility <= Date.today
+              I can donate again now!
+            - else
+              I will be able to donate in #{time_ago_in_words(blood_profile.eligibility)}.
+        %a.donate-button{:href => 'http://www.redcrossblood.org/make-donation', :target => '_blank'}
+          %i.bb-drop
+          What about you? Schedule your next donation!
