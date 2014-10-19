@@ -5,7 +5,7 @@ module RedCrossAPI
 
     URL = {
       :authentication => '/v1.0/authentication',
-      :profile => '/v1.0/users/me?inflate=history'
+      :profile => '/v1.0/users/me?inflate=history%2Cappointments'
     }
 
     JSON_HEADERS = { 'Content-Type' => 'application/json' }

@@ -1,15 +1,15 @@
 @font-face {
 	font-family: 'bloodbadge';
-	src:url('fonts/bloodbadge.eot?-v60pf2');
-	src:url('fonts/bloodbadge.eot?#iefix-v60pf2') format('embedded-opentype'),
-		url('fonts/bloodbadge.woff?-v60pf2') format('woff'),
-		url('fonts/bloodbadge.ttf?-v60pf2') format('truetype'),
-		url('fonts/bloodbadge.svg?-v60pf2#bloodbadge') format('svg');
+	src:url('fonts/bloodbadge.eot?idg62w');
+	src:url('fonts/bloodbadge.eot?#iefixidg62w') format('embedded-opentype'),
+		url('fonts/bloodbadge.woff?idg62w') format('woff'),
+		url('fonts/bloodbadge.ttf?idg62w') format('truetype'),
+		url('fonts/bloodbadge.svg?idg62w#bloodbadge') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="bb-"], [class*=" bb-"] {
 	font-family: 'bloodbadge';
 	speak: none;
 	font-style: normal;
@@ -23,9 +23,12 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-drop-circle:before {
+.bb-drop-circle:before {
 	content: "\e600";
 }
-.icon-happy-heart:before {
+.bb-happy-heart:before {
 	content: "\e601";
+}
+.bb-drop:before {
+	content: "\e602";
 }

@@ -1,7 +1,6 @@
 class ProfileController < ApplicationController
-  def show
-    @user = User.find_by!(:key => params[:key])
+  before_filter :authenticate_user!
 
-    @blood_profile = RedCrossAPI.profile(@user.token)
+  def show
   end
 end

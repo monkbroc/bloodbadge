@@ -33,7 +33,7 @@
 				}
 			],
 			"properties": {
-				"order": 2,
+				"order": 5,
 				"id": 1,
 				"prevSize": 32,
 				"code": 58880,
@@ -66,7 +66,7 @@
 				}
 			],
 			"properties": {
-				"order": 3,
+				"order": 6,
 				"id": 0,
 				"prevSize": 32,
 				"code": 58881,
@@ -75,6 +75,39 @@
 			},
 			"setIdx": 0,
 			"iconIdx": 1
+		},
+		{
+			"icon": {
+				"paths": [
+					"M624.097 338.637c-55.439-95.611-98.089-233.083-89.416-337.562-94.372 101.806-174.725 217.59-236.073 336.65-62.177 120.648-133.581 251.177-106.619 430.080 20.644 139.151 140.595 256.451 285.46 256.451 152.146 0 287.928-112.896 287.928-256.256h0.829c8.11-133.12-72.909-309.955-142.111-429.363z"
+				],
+				"attrs": [
+					{
+						"opacity": 1,
+						"visibility": false
+					}
+				],
+				"grid": 0,
+				"tags": [
+					"drop"
+				]
+			},
+			"attrs": [
+				{
+					"opacity": 1,
+					"visibility": false
+				}
+			],
+			"properties": {
+				"order": 4,
+				"id": 2,
+				"prevSize": 32,
+				"code": 58882,
+				"name": "drop",
+				"ligatures": ""
+			},
+			"setIdx": 0,
+			"iconIdx": 2
 		}
 	],
 	"height": 1024,
@@ -83,7 +116,7 @@
 	},
 	"preferences": {
 		"fontPref": {
-			"prefix": "icon-",
+			"prefix": "bb-",
 			"metadata": {
 				"fontFamily": "bloodbadge",
 				"majorVersion": 1,

@@ -9,7 +9,7 @@
 	font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="bb-"], [class*=" bb-"] {
 	font-family: 'bloodbadge';
 	speak: none;
 	font-style: normal;
@@ -23,9 +23,12 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-drop-circle:before {
+.bb-drop-circle:before {
 	content: "\e600";
 }
-.icon-happy-heart:before {
+.bb-happy-heart:before {
 	content: "\e601";
+}
+.bb-drop:before {
+	content: "\e602";
 }

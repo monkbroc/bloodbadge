@@ -13,6 +13,10 @@ class User < ActiveRecord::Base
     end
   end
 
+  def badge_cache_key
+    'badges/' + key
+  end
+
   private
 
   def generate_key
