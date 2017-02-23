@@ -4,8 +4,8 @@ module RedCrossAPI
     base_uri 'blood.arc.cubeapis.com'
 
     URL = {
-      :authentication => '/v1.0/authentication',
-      :profile => '/v1.0/users/me?inflate=history%2Cappointments'
+      :authentication => '/v2.0/authentication',
+      :profile => '/v2.0/users/me?inflate=history%2Cappointments'
     }
 
     JSON_HEADERS = { 'Content-Type' => 'application/json' }
@@ -40,7 +40,7 @@ module RedCrossAPI
 
     def authorization_header(token)
       {
-        'Authorization' => token
+        'Authorization' => "Local #{token}"
       }
     end
   end

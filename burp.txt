@@ -1,0 +1,10 @@
+Install Burp
+Generate certificate
+Run Burp
+Configure Wi-Fi on phone to use laptop IP port 8080 as proxy
+Visit http://burp on phone
+Download certificate
+Install certificate to trusted root
+Open app
+Intercept SSL calls
+Profit!
